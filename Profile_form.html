@@ -17,6 +17,7 @@
     <br>
     <br>
     <br>
+    <form action="" method="post" enctype="multipart/form-data">
     <table border="1" width="100%"  align="left">
         <tr>
             <td>Enter Your Email</td>
@@ -24,9 +25,9 @@
             <td>Mobile Number</td>
         </tr>
         <tr>
-            <td><input type="text" name="email" placeholder="Enter Your Email" id required ></td>
-            <td><input type="password" name="password" placeholder="Enter Eight Digit Passworld" required ></td>
-            <td><input type="tel" name="phone_number" placeholder="Enter your Mobile Number" required></td>
+            <td><input type="text" name="email" placeholder="Enter Your Email" id="email" required ></td>
+            <td><input type="password" name="password" placeholder="Enter Eight Digit Passworld" id="password" required ></td>
+            <td><input type="tel" name="phone_number" placeholder="Enter your Mobile Number" id="phone_number" required></td>
         </tr>
     </table>
     <br>
@@ -42,9 +43,13 @@
             <td>Select Category</td>
         </tr>
         <tr>
-            <td><input type="text" name="slogan"  placeholder="Enter Company Name/Service Name" required></td>
-            <td><input type="password" placeholder="Enter Eight Digit Passworld" ></td>
-            <td><input type="tel" placeholder="Enter your Mobile Number"></td>
+            <td><input type="text" name="slogan"  placeholder="Enter Company Name/Service Name" id="slogan" required></td>
+            <td> <input type="file" name="image" id="">
+            <td><select name="country" id="">
+                <option value="0">Select Category</option>
+                <option value="1">Engineering</option>
+                <option value="2">Hotels</option>
+                <option value="3">Automotive</option></td>
         </tr>
     </table>
     <br>
@@ -83,8 +88,20 @@
             
         </tr>
     </table>
-
-
+    <br>
+    <br>
+    <br>
+    <table border="1" width="100%"  align="left">
+        <tr>
+            <td colspan="2" align="right">
+                 <input type="submit" value="Create Profile" name="profile" id="profile">
+                 <input type="reset" value="Reset" name="reset" id="reset">
+                 <input type="submit" value="Back" name="back" id="back">
+                 &emsp;&emsp;&emsp;&emsp;
+            </td>
+        </tr>
+    </table>
+</form>
 </body>
 
 </html>
